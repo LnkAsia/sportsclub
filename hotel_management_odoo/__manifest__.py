@@ -38,6 +38,7 @@
         'security/hotel_management_odoo_security.xml',
         'security/ir.model.access.csv',
         'data/ir_data_sequence.xml',
+        'data/ir_data_sequence_rent.xml',
         'views/account_move_views.xml',
         'views/car_rental_views.xml',
         'views/hotel_menu_views.xml',
