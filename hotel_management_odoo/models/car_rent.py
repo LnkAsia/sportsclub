@@ -40,3 +40,16 @@ class CarRental(models.Model):
         if vals.get('name', 'New') == 'New':
             vals['name'] = self.env['ir.sequence'].next_by_code('car.rental') or 'New'
         return super().create(vals)
+
+    def action_confirm(self):
+        for rec in self:
+            rec.state = 'confirmed'
+
+    def action_done(self):
+        for rec in self:
+            rec.state = 'done'
+
+    def action_cancel(self):
+        for rec in self:
+            rec.state = 'cancelled'
+    

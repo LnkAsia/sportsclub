@@ -22,6 +22,14 @@
         <field name="model">car.rental</field>
         <field name="arch" type="xml">
             <form string="Car Rental">
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm" invisible="state != 'draft'"/>
+                    <button name="action_done" type="object" string="Mark as Done" invisible="state != 'confirmed'"/>
+                    <button name="action_cancel" type="object" string="Cancel" invisible="state in ['cancelled','done']"/>
+
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,confirmed,done,cancelled"/>
+                </header>
                 <sheet>
                     <group>
                         <field name="name" readonly="1"/>
@@ -29,7 +37,7 @@
                         <field name="customer_id"/>
                         <field name="start_date"/>
                         <field name="end_date"/>
-                        <field name="state"/>
+                        <!-- <field name="state"/> -->
                     </group>
                 </sheet>
             </form>
