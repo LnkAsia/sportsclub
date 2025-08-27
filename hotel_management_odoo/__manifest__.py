@@ -39,6 +39,7 @@
         'security/ir.model.access.csv',
         'data/ir_data_sequence.xml',
         'views/account_move_views.xml',
+        'views/car_rental_views.xml',
         'views/hotel_menu_views.xml',
         'views/hotel_amenity_views.xml',
         'views/hotel_service_views.xml',

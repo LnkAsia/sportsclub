@@ -21,6 +21,7 @@
 ###############################################################################
 from . import account_move
 from . import account_move_line
+from . import car_rent
 from . import cleaning_request
 from . import cleaning_team
 from . import event_booking_line
