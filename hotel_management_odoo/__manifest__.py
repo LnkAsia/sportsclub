@@ -55,6 +55,7 @@
         'views/cleaning_request_views.xml',
         'views/food_booking_line_views.xml',
         'views/dashboard_view.xml',
+        'views/res_partner.xml',
         'wizard/room_booking_detail_views.xml',
         'wizard/sale_order_detail_views.xml',
         'views/reporting_views.xml',

@@ -62,5 +62,5 @@
 
     <!-- Menu -->
     <!-- <menuitem id="menu_car_rental_root" name="Car Rental" sequence="10" /> -->
-    <menuitem id="menu_car_rental_main" name="Rentals" parent="hotel_management_menu_root" action="action_car_rental" sequence="2"/>
+    <menuitem id="menu_car_rental_main" name="Cars Rentals" parent="hotel_management_menu_root" action="action_car_rental" sequence="15"/>
 </odoo>

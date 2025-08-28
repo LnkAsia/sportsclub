@@ -34,6 +34,7 @@ from . import hotel_room
 from . import hotel_service
 from . import maintenance_request
 from . import maintenance_team
+from . import res_partner
 from . import room_booking
 from . import room_booking_line
 from . import service_booking_line
