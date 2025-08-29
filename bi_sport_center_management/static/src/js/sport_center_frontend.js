@@ -55,8 +55,12 @@ import { session } from '@web/session';
             const currentTimeInUserTimezone = new Date(now.toLocaleString('en-US', { timeZone: userTimezone }));
             if (start_date == '' || end_date == '' || ground_id == '' || sportname_id == '') {
                 alert('Please fill all the values!');
-            } else if (end_date < start_date) {
+            } 
+             else if (end_date < start_date) {
                 alert('Please make proper date format!');
+            }
+            else if (startDateObject < currentTimeInUserTimezone) {
+                alert('Start Time must be after the Current Time!!'); 
             }
              else {
                 var data = {
