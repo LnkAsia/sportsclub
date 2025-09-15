@@ -135,7 +135,7 @@ class StudentRegistration(http.Controller):
 
         tz = pytz.timezone(request.env.user.tz) or pytz.utc
         start_date = datetime.fromisoformat(kw.get('model_start_date'))
-        end_date = datetime.fromisoformat(kw.get('model_start_date'))
+        end_date = datetime.fromisoformat(kw.get('model_end_date'))
         start_date = tz.localize(start_date)
         end_date = tz.localize(end_date)
         start_date_utc = start_date.astimezone(pytz.utc)
